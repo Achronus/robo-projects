@@ -1,0 +1,11 @@
+[project]
+name = "modern-robotics"
+version = "0.1.0"
+description = "A place to learn modern robotics techniques."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
