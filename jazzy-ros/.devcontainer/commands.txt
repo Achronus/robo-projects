@@ -1,0 +1,5 @@
+# https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html
+ros2 pkg create --build-type ament_[cmake | python] --license [Apache-2.0 | MIT] [project_name]
+
+# Build package
+colcon build --symlink-install --merge-install
