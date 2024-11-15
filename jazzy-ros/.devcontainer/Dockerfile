@@ -28,7 +28,8 @@ RUN sudo apt update && sudo apt upgrade -y && \
 # Set up Python virtual environment
 RUN python3 -m venv /home/$USERNAME/venv
 ENV PATH="/home/$USERNAME/venv/bin:$PATH"
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip && \
+    pip install pydantic
 
 # Rosdep update
 RUN rosdep update
