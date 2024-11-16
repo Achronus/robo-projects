@@ -1,0 +1,39 @@
+# ROS specific build, log, and install directories
+build/
+devel/
+install/
+log/
+
+# ROS specific CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*_build/
+
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# VS Code specific files (if using VS Code)
+.vscode/
+
+# JetBrains IDE specific files (if using IntelliJ, PyCharm, etc.)
+.idea/
+
+# Other editor/IDE temporary files
+*.swp
+*~ 
+
+# User-specific settings
+*.log
+*.bak
+*.swp
+
+# Temporary and backup files
+*.tmp
+*.bak
+
+# Python
+*.venv
