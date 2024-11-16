@@ -1,21 +1,16 @@
 {
   "name": "jazzy-ros",
   "dockerFile": "Dockerfile",
-  "runArgs": [
-    "--privileged"
-  ],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+  "runArgs": ["--privileged"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind,consistency=cached",
   "workspaceFolder": "/${localWorkspaceFolderBasename}",
   "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind,consistency=cached"
   ],
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
-  "forwardPorts": [
-    6080,
-    5901
-  ],
+  "forwardPorts": [6080, 5901],
   "portsAttributes": {
     "6080": {
       "label": "Desktop (Web)"
@@ -30,7 +25,9 @@
         "ms-vscode.cmake-tools",
         "ms-azuretools.vscode-docker",
         "ms-python.python",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "tamasfe.even-better-toml",
+        "charliermarsh.ruff"
       ]
     },
     "settings": {

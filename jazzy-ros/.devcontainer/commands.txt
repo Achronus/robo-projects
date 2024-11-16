@@ -2,4 +2,7 @@
 ros2 pkg create --build-type ament_[cmake | python] --license [Apache-2.0 | MIT] [project_name]
 
 # Build package
-colcon build --symlink-install --merge-install
+colcon build --symlink-install
+
+# Access ROS custom packages
+source install/local_setup.bash
